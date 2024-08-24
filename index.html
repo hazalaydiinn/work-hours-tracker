@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Hours Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Work Hours Tracker</h1>
+        <form id="time-form">
+            <input type="text" id="activity-input" placeholder="Enter activity" required>
+            <input type="number" id="hours-input" placeholder="Hours spent" min="0" step="0.1" required>
+            <button type="submit">Add Entry</button>
+        </form>
+        <div id="time-summary">
+            <h2>Total Hours: <span id="total-hours">0</span></h2>
+        </div>
+        <ul id="activity-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
